@@ -8,7 +8,9 @@ ShortcutBadger: https://github.com/leolin310148/ShortcutBadger.
 # Support launchers
 Takes look at ShortcutBadger.
 
-# USAGE
+# Install
+```npm install react-native-image-picker@latest --save```
+
 1.In your `android/settings.gradle` file, make the following additions:
 ```
 include ':react-native-shortcutbadger'
@@ -39,4 +41,13 @@ public class MainActivity extends ReactActivity {
     }
     ...
 }
+```
+
+# Usage
+```
+import { NativeModules } from 'react-native';
+const ShortcutBadger = NativeModules.ShortcutBadger;
+int count = 1;
+ShortcutBadger.applyCount(count);
+ShortcutBadger.removeCount();
 ```
