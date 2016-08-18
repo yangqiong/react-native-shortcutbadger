@@ -9,13 +9,13 @@ ShortcutBadger: https://github.com/leolin310148/ShortcutBadger.
 Takes look at ShortcutBadger.
 
 # USAGE
-1. In your `android/settings.gradle` file, make the following additions:
+1.In your `android/settings.gradle` file, make the following additions:
 ```
 include ':react-native-shortcutbadger'
 project(':react-native-shortcutbadger').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-shortcutbadger/android')
 ```
 
-2. In your `android/app/build.gradle` file, add the `:react-native-shortcutbadgerproject` as a compile-time dependency:
+2.In your `android/app/build.gradle` file, add the `:react-native-shortcutbadgerproject` as a compile-time dependency:
 ```
 ...
 dependencies{
@@ -25,7 +25,7 @@ dependencies{
 ...
 ```
 
-3. Update `MainActivity.java` to use shortcutbadger via the following changes
+3.Update `MainActivity.java` to use shortcutbadger via the following changes
 ```
 import com.yangqiong.shortcutbadger.ShortcutBadgerPackage;
 
