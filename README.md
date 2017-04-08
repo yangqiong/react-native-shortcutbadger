@@ -27,11 +27,11 @@ dependencies{
 ...
 ```
 
-3.Update `MainActivity.java` to use shortcutbadger via the following changes
+3.Update `MainApplication.java` to use shortcutbadger via the following changes
 ```
 import com.yangqiong.shortcutbadger.ShortcutBadgerPackage;
 
-public class MainActivity extends ReactActivity {
+public class MainApplication extends Application implements ReactApplication {
     ...
     protected List<ReactPackage> getPackages() {
         return Arrays.<ReactPackage>asList(
